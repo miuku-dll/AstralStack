@@ -9,10 +9,14 @@ First time actually using wpf for the user interface so everything looks horribl
 
 ### Stuff to do
 
+> Implement a proper bookmarking method for blobs <br>
+> Implement a proper way to favouirte blobs <br>
+> Add a cpu & gpu temp screen to home page (empty pink box) <br>
 > Auto detect 2 main colors from image for gradient <br>
 > Better way to implement custom images for apps <br>
 >(Done ish) Better way to implement custom apps <br>
 > Make the ui not make me vomit <br>
+> Auto detect apps from x folders (ex games from fitgirl / dodirepacks) <br>
 
 ## Important Error Codes
 
