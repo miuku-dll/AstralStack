@@ -118,5 +118,29 @@ namespace Kill_yourself_1.Properties {
                 this["Blob8Path"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Bookmark1 {
+            get {
+                return ((string)(this["Bookmark1"]));
+            }
+            set {
+                this["Bookmark1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string BookmarkImg {
+            get {
+                return ((string)(this["BookmarkImg"]));
+            }
+            set {
+                this["BookmarkImg"] = value;
+            }
+        }
     }
 }

@@ -132,6 +132,22 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
+        private void BlobBookmark1_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob1Path;
+                Settings.Default.BookmarkImg = "Blob1.png";
+                MessageBox.Show("Bookmarked Blob1");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
+        }
+
         private void FileBtn1_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -197,6 +213,22 @@ namespace Kill_yourself_1.MVVM.View
 
         }
 
+        private void BlobBookmark2_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob2Path;
+                Settings.Default.BookmarkImg = "Blob2.png";
+                MessageBox.Show("Bookmarked Blob2");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
+        }
+
         private void FileBtn2_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -248,6 +280,22 @@ namespace Kill_yourself_1.MVVM.View
                 MessageBox.Show("Error 101");
             }
 
+        }
+
+        private void BlobBookmark3_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob3Path;
+                Settings.Default.BookmarkImg = "Blob3.png";
+                MessageBox.Show("Bookmarked Blob3");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
         }
 
         private void FileBtn3_Click(object sender, RoutedEventArgs e)
@@ -302,6 +350,22 @@ namespace Kill_yourself_1.MVVM.View
 
         }
 
+        private void BlobBookmark4_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob4Path;
+                Settings.Default.BookmarkImg = "Blob4.png";
+                MessageBox.Show("Bookmarked Blob4");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
+        }
+
         private void FileBtn4_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -352,6 +416,22 @@ namespace Kill_yourself_1.MVVM.View
                 MessageBox.Show("Error 101");
             }
 
+        }
+
+        private void BlobBookmark5_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob5Path;
+                Settings.Default.BookmarkImg = "Blob5.png";
+                MessageBox.Show("Bookmarked Blob5");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
         }
 
         private void FileBtn5_Click(object sender, RoutedEventArgs e)
@@ -406,6 +486,22 @@ namespace Kill_yourself_1.MVVM.View
 
         }
 
+        private void BlobBookmark6_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob6Path;
+                Settings.Default.BookmarkImg = "Blob6.png";
+                MessageBox.Show("Bookmarked Blob6");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
+        }
+
         private void FileBtn6_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -458,6 +554,21 @@ namespace Kill_yourself_1.MVVM.View
 
         }
 
+        private void BlobBookmark7_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob7Path;
+                Settings.Default.BookmarkImg = "Blob7.png";
+                MessageBox.Show("Bookmarked Blob7");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
+        }
 
         private void FileBtn7_Click(object sender, RoutedEventArgs e)
         {
@@ -509,6 +620,22 @@ namespace Kill_yourself_1.MVVM.View
                 MessageBox.Show("Error 101");
             }
 
+        }
+        private void BlobBookmark8_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Settings.Default.Bookmark1 = Properties.Settings.Default.Blob8Path;
+                Settings.Default.BookmarkImg = "Blob8.png";
+
+                MessageBox.Show("Bookmarked Blob8");
+                Settings.Default.Save();
+                Settings.Default.Reload();
+            }
+            catch
+            {
+                MessageBox.Show("Error 103");
+            }
         }
 
         private void FileBtn8_Click(object sender, RoutedEventArgs e)

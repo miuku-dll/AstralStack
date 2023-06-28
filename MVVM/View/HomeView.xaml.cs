@@ -35,7 +35,14 @@ namespace Kill_yourself_1.MVVM.View
 
         private void Bookmark1_Clicked(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Program Files (x86)\\Steam\\Steam.exe");
+            try
+            {
+                System.Diagnostics.Process.Start(Properties.Settings.Default.Bookmark1);
+            }
+            catch
+            {
+                MessageBox.Show("Error 104");
+            }
         }
 
         private void Bookmark2_Clicked(object sender, RoutedEventArgs e)

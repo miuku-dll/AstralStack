@@ -118,17 +118,27 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob1"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=100}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                         
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn1_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob1" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn1_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob1" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark1_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>
@@ -168,16 +178,26 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob2"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=150}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn2_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob2" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn2_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob2" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark2_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>
@@ -221,16 +241,26 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob3"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=200}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn3_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob3" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn3_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob3" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark3_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>
@@ -270,16 +300,26 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob4"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=250}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn4_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob4" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn4_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob4" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark4_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>
@@ -334,16 +374,26 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob5"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=300}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn5_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob5" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn5_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob5" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark5_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>
@@ -383,16 +433,26 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob6"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=350}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn6_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob6" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn6_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob6" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark6_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>
@@ -434,16 +494,26 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob7"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=400}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn7_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob7" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn7_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob7" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark7_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>
@@ -483,16 +553,26 @@
 
                     <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob8"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=450}">
-                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        <Border Height="30" Width="60" Margin="0,0,0,0" Background="#303030"
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                            <Button Click="FileBtn8_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob8" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                                <Image Height="15" Width="15" Stretch="Fill">
-                                    <Image.Source>
-                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                    </Image.Source>
-                                </Image>
-                            </Button>
+                            <Grid>
+                                <Button Click="FileBtn8_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob8" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+
+                                <Button Click="BlobBookmark8_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\book.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </Grid>
                         </Border>
                     </StackPanel>
                 </StackPanel>

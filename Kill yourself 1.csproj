@@ -12,6 +12,7 @@
     <None Remove="Fonts\Comfortaa.ttf" />
     <None Remove="Fonts\SegoeUI.ttf" />
     <None Remove="Images\blizzard.png" />
+    <None Remove="Images\book.png" />
     <None Remove="Images\close.png" />
     <None Remove="Images\cog.png" />
     <None Remove="Images\cog3.png" />
@@ -32,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\book.png" />
     <Resource Include="Images\close.png" />
     <Resource Include="Images\edit1.png" />
   </ItemGroup>
