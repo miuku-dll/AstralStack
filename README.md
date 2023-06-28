@@ -1,17 +1,23 @@
 ## Simple 'loader' for your favourite / most used apps
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-</picture>
-
 ### Info
 First time actually using wpf for the user interface so everything looks horrible(ish) 
+
+## Showcase
+
+[![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123485460535193710/newdemo.gif)](https://cdn.discordapp.com/attachments/908858749119258637/1123465809738596442/2023-06-28_07-11-18.mp4)
 
 ### Stuff to do
 
 > Auto detect 2 main colors from image for gradient <br>
 > Better way to implement custom images for apps <br>
-> Better way to implement custom apps <br>
+>(Done ish) Better way to implement custom apps <br>
 > Make the ui not make me vomit <br>
 
+## Important Error Codes
+
+#### Error code 101
+> Failed to find a executeable to save
+
+#### Error code 102
+> Failed to save executeable to config
