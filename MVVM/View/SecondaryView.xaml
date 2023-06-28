@@ -10,7 +10,19 @@
 
     <StackPanel>
 
-        <Grid Height="65">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="700"/>
+                <ColumnDefinition Width="700"/>
+                <ColumnDefinition Width="700"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="190"/>
+                <RowDefinition Height="190"/>
+            </Grid.RowDefinitions>
+
 
 
             <TextBlock Text="Game library"
@@ -65,208 +77,213 @@
                 Style="{StaticResource FileTxtBox}"/>
 
 
-        </Grid>
 
-        <StackPanel Orientation="Horizontal"
+
+            <StackPanel Orientation="Horizontal"
                     Margin="0,0,0,15"
-                    Width="700">
+                     Grid.Row="1">
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}">
-                <Border Width="150"
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=100}"
                     >
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#ffa9c3" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#ffa9c3" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
-                        <Image
+                        <Grid>
+                            <Image
                     Source="pack://siteoforigin:,,,/Images/Blob1.png" RenderTransformOrigin="0.665,0.639" Margin="-65,-34,-169,-158"/>
 
 
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob1_Clicked">
-                        </Button>
-                    </Grid>
-                </Border>
+                            </Button>
+                        </Grid>
+                    </Border>
 
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob1">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob1"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=100}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                        
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                        <Button Click="FileBtn1_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob1" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
-                    </Border>
+                            <Button Click="FileBtn1_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob1" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
 
 
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
-                <Border Width="150"
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=150}">
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#7cd8f7" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#7cd8f7" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
-                        <Image
+                        <Grid>
+                            <Image
                      Source="pack://siteoforigin:,,,/Images/Blob2.png" RenderTransformOrigin="0.665,0.639" Margin="-65,-34,-169,-158">
-                        </Image>
+                            </Image>
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob2_Clicked">
-                        </Button>
+                            </Button>
 
-                    </Grid>
-                </Border>
+                        </Grid>
+                    </Border>
 
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob2">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob2"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=150}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                        <Button Click="FileBtn2_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob2" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
-                    </Border>
+                            <Button Click="FileBtn2_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob2" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
 
 
 
-            
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
-                <Border Width="150"
+
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=200}">
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#a8e48f" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#a8e48f" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
+                        <Grid>
 
-                        
-                        <Image
+
+                            <Image
                      Source="pack://siteoforigin:,,,/Images/Blob3.png" RenderTransformOrigin="0.665,0.639" Margin="-65,-34,-197,-255">
-                        </Image>
+                            </Image>
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob2_Clicked">
-                        </Button>
+                            </Button>
 
-                    </Grid>
-                </Border>
-
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob3">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
-                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
-
-                        <Button Click="FileBtn3_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob3" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
+                        </Grid>
                     </Border>
+
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob3"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=200}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                       CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
+
+                            <Button Click="FileBtn3_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob3" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
 
 
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
-                <Border Width="150"
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=250}">
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#f4c8db" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#f4c8db" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
-                        <Image
+                        <Grid>
+                            <Image
                      Source="pack://siteoforigin:,,,/Images/Blob4.png" RenderTransformOrigin="0.665,0.639" Margin="-63,-40,-167,-50">
-                        </Image>
+                            </Image>
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob2_Clicked">
-                        </Button>
+                            </Button>
 
-                    </Grid>
-                </Border>
+                        </Grid>
+                    </Border>
 
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob4">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob4"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=250}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                        <Button Click="FileBtn4_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob4" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
-                    </Border>
+                            <Button Click="FileBtn4_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob4" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
+
             </StackPanel>
-          
-        </StackPanel>
 
 
 
@@ -278,205 +295,209 @@
 
 
 
-        <StackPanel Orientation="Horizontal"
+            <StackPanel Orientation="Horizontal"
                     Margin="0,0,0,15"
-                    Width="700">
+                    Grid.Row="3">
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}">
-                <Border Width="150"
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=300}"
                     >
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#299b4d" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#299b4d" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
-                        <Image
+                        <Grid>
+                            <Image
                     Source="pack://siteoforigin:,,,/Images/Blob5.png" RenderTransformOrigin="0.665,0.639" Margin="-65,-34,-169,-158"/>
 
 
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob1_Clicked">
-                        </Button>
-                    </Grid>
-                </Border>
-
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob5">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
-                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
-
-                        <Button Click="FileBtn5_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob5" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
+                            </Button>
+                        </Grid>
                     </Border>
+
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob5"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=300}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                       CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
+
+                            <Button Click="FileBtn5_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob5" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
 
 
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
-                <Border Width="150"
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=350}">
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#636078" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#636078" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
-                        <Image
+                        <Grid>
+                            <Image
                      Source="pack://siteoforigin:,,,/Images/Blob6.png" RenderTransformOrigin="0.665,0.639" Margin="-65,-34,-169,-158">
-                        </Image>
+                            </Image>
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob2_Clicked">
-                        </Button>
+                            </Button>
 
-                    </Grid>
-                </Border>
-
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob6">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
-                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
-
-                        <Button Click="FileBtn6_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob6" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
+                        </Grid>
                     </Border>
+
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob6"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=350}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                       CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
+
+                            <Button Click="FileBtn6_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob6" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
 
 
 
 
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
-                <Border Width="150"
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=400}">
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#fa7e5f" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#fa7e5f" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
-                        <Image
+                        <Grid>
+                            <Image
                      Source="pack://siteoforigin:,,,/Images/Blob7.png" RenderTransformOrigin="0.665,0.639" Margin="-65,-34,-169,-158">
-                        </Image>
+                            </Image>
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob2_Clicked">
-                        </Button>
+                            </Button>
 
-                    </Grid>
-                </Border>
-
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob7">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
-                        CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
-
-                        <Button Click="FileBtn7_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob7" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
+                        </Grid>
                     </Border>
+
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob7"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=400}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                       CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
+
+                            <Button Click="FileBtn7_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob7" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
 
 
 
-            <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
-                <Border Width="150"
+                <StackPanel Width="150" Height="150" Style="{StaticResource LibBox}" Margin="20,0,0,0">
+                    <Border Width="150"
                     Height="150"
                     xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=450}">
 
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                            <GradientStop Color="#b8daca" Offset="0.0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#b8daca" Offset="0.0"/>
+                                <GradientStop Color="#fff" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="10"
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0,0,150,150"/>
-                    </Border.Clip>
+                        </Border.Clip>
 
-                    <Grid>
-                        <Image
+                        <Grid>
+                            <Image
                      Source="pack://siteoforigin:,,,/Images/Blob8.png" RenderTransformOrigin="0.665,0.639" Margin="-65,-34,-169,-158">
-                        </Image>
+                            </Image>
 
-                        <Button
+                            <Button
                             Style="{StaticResource LibBtn}"
                            Click="Blob2_Clicked">
-                        </Button>
+                            </Button>
 
-                    </Grid>
-                </Border>
+                        </Grid>
+                    </Border>
 
-                <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob8">
-                    <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
+                    <StackPanel Height="30" Margin="0,-30,0,0" Visibility="Hidden" Name="Blob8"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Event=Visibility, Delay=450}">
+                        <Border Height="30" Width="30" Margin="0,0,0,0" Background="#303030"
                         CornerRadius="10,0,10,0" Opacity="0.8" HorizontalAlignment="Right">
 
-                        <Button Click="FileBtn8_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob8" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
-                            <Image Height="15" Width="15" Stretch="Fill">
-                                <Image.Source>
-                                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
-                                </Image.Source>
-                            </Image>
-                        </Button>
-                    </Border>
+                            <Button Click="FileBtn8_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="0,0,0,0" Background="Transparent" Name="EditBlob8" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                <Image Height="15" Width="15" Stretch="Fill">
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit1.png" />
+                                    </Image.Source>
+                                </Image>
+                            </Button>
+                        </Border>
+                    </StackPanel>
                 </StackPanel>
+
             </StackPanel>
-
-        </StackPanel>
-
+        </Grid>
 
     </StackPanel>
 </UserControl>

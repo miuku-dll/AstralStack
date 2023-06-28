@@ -99,17 +99,21 @@
                             Content="{Binding CurrentView}"/>
 
 
-            <Button
+            <StackPanel VerticalAlignment="Center" Grid.Column="1" Margin="0,0,10,0" Width="40" Height="40" HorizontalAlignment="Right">
+                <Button
                 Grid.Column="1"
-                Margin="674,18,10,17"
-                FontSize="19"
-                Height="40"
+                FontSize="18"
+                Height="30"
+                Width="30"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
                 BorderThickness="0"
                 Name="CoseBtn"
                 Command="{Binding Close_Clicked}"
                 Click="Close_Clicked"
-                Style="{StaticResource CloseBtn}">X</Button>
-
+                Style="{StaticResource CloseBtn}">X
+                </Button>
+            </StackPanel>
         </Grid>
 
 
