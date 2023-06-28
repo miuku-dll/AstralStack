@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Kill_yourself_1"
         xmlns:viewModel="clr-namespace:Kill_yourself_1.MVVM.ViewModel"
         mc:Ignorable="d"
+        xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF"
         Title="MainWindow" Height="600" Width="920"
         WindowStyle="None"
         ResizeMode="NoResize"
@@ -60,6 +61,7 @@
                              Height="45"
                              Foreground="#FFF"
                              FontSize="16"
+                             xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=300}"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
@@ -69,6 +71,7 @@
                              Height="45"
                              Foreground="#FFF"
                              FontSize="16"
+                             xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=400}"
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding SecondaryViewCommand}"/>
 
@@ -76,6 +79,7 @@
                              Height="45"
                              Foreground="#FFF"
                              FontSize="16"
+                             xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=500}"
                              Style="{StaticResource MenuButtonTheme}"/>
 
 
@@ -101,7 +105,7 @@
                 FontSize="19"
                 Height="40"
                 BorderThickness="0"
-                Name="cmdCommand"
+                Name="CoseBtn"
                 Command="{Binding Close_Clicked}"
                 Click="Close_Clicked"
                 Style="{StaticResource CloseBtn}">X</Button>
