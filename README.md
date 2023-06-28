@@ -5,7 +5,7 @@ First time actually using wpf for the user interface so everything looks horribl
 
 ## Showcase
 
-[![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123522016109146132/demo3.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1123522006822953070/2023-06-28_10-53-09.mp4)
+[![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123530021328388146/demo4.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1123530001791340635/2023-06-28_11-25-12.mp4)
 
 
 ## General
