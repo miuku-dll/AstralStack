@@ -7,6 +7,12 @@ First time actually using wpf for the user interface so everything looks horribl
 
 [![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123485460535193710/newdemo.gif)](https://cdn.discordapp.com/attachments/908858749119258637/1123465809738596442/2023-06-28_07-11-18.mp4)
 
+
+## General
+
+### Change blob images
+> Program creates 'images' folder onload, name your images Blob1-8.png (ex. Blob3.png)
+
 ### Stuff to do
 
 > Implement a proper bookmarking method for blobs <br>
