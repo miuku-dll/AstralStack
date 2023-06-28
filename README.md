@@ -1,9 +1,6 @@
 ## Simple 'loader' for your favourite / most used apps
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yurkyu/Loader-for-your-favourite-apps/blob/master/Images/Screenshot_264.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://github.com/yurkyu/Loader-for-your-favourite-apps/blob/master/Images/Screenshot_264.png">
-</picture>
+[![Demo CountPages alpha](https://cdn.discordapp.com/attachments/908858749119258637/1123465809738596442/2023-06-28_07-11-18.mp4)](https://cdn.discordapp.com/attachments/908858749119258637/1123465809738596442/2023-06-28_07-11-18.mp4)
 
 ### Info
 First time actually using wpf for the user interface so everything looks horrible(ish) 
