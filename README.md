@@ -32,3 +32,9 @@ First time actually using wpf for the user interface so everything looks horribl
 
 #### Error code 102
 > Failed to save executeable to config
+
+#### Error code 103
+> Failed to start bookmarked application
+
+#### Error code 104
+> Failed to bookmark application
