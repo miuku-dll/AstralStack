@@ -5,7 +5,7 @@ First time actually using wpf for the user interface so everything looks horribl
 
 ## Showcase
 
-[![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123522016109146132/demo3.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1123522006822953070/2023-06-28_10-53-09.mp4)
+[![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123530021328388146/demo4.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1123530001791340635/2023-06-28_11-25-12.mp4)
 
 
 ## General
@@ -22,6 +22,7 @@ First time actually using wpf for the user interface so everything looks horribl
 > Better way to implement custom images for apps <br>
 >(Done ish) Better way to implement custom apps <br>
 > Make the ui not make me vomit <br>
+> Error code all errors for easier support <br>
 > Auto detect apps from x folders (ex games from fitgirl / dodirepacks) <br>
 
 ## Important Error Codes
@@ -31,3 +32,9 @@ First time actually using wpf for the user interface so everything looks horribl
 
 #### Error code 102
 > Failed to save executeable to config
+
+#### Error code 103
+> Failed to start bookmarked application
+
+#### Error code 104
+> Failed to bookmark application
