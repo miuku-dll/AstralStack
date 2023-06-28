@@ -1,6 +1,6 @@
 ## Simple 'loader' for your favourite / most used apps
 
-[![Demo CountPages alpha](https://cdn.discordapp.com/attachments/908858749119258637/1123465809738596442/2023-06-28_07-11-18.mp4)](https://cdn.discordapp.com/attachments/908858749119258637/1123465809738596442/2023-06-28_07-11-18.mp4)
+[![Demo](https://cdn.discordapp.com/attachments/908858749119258637/1123466977906794536/demo.gif)](https://cdn.discordapp.com/attachments/908858749119258637/1123465809738596442/2023-06-28_07-11-18.mp4)
 
 ### Info
 First time actually using wpf for the user interface so everything looks horrible(ish) 
