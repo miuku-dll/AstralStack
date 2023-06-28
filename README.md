@@ -16,6 +16,7 @@ First time actually using wpf for the user interface so everything looks horribl
 > Better way to implement custom images for apps <br>
 >(Done ish) Better way to implement custom apps <br>
 > Make the ui not make me vomit <br>
+> Auto detect apps from x folders (ex games from fitgirl / dodirepacks) <br>
 
 ## Important Error Codes
 
