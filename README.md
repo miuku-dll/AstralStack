@@ -14,3 +14,10 @@ First time actually using wpf for the user interface so everything looks horribl
 >(Done ish) Better way to implement custom apps <br>
 > Make the ui not make me vomit <br>
 
+## Important Error Codes
+
+#### Error code 101
+> Failed to find a executeable to save
+
+#### Error code 102
+> Failed to save executeable to config
