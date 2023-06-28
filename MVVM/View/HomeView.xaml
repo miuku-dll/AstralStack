@@ -156,6 +156,7 @@
                                 Name="cmdCommand"
                                 Style="{StaticResource HomeBtn}"
                                 Click="Button_Clicked" RenderTransformOrigin="0.709,-1.014"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource Grow}, Event=Click}"
                                 >Play!</Button>
                         </Grid>
                     </Border>
@@ -218,6 +219,7 @@
                                 Name="SteamBtn"
                                 Style="{StaticResource HomeBtn}"
                                 Click="Bookmark1_Clicked"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource Grow}, Event=Click}"
                                 >Launch!</Button>
                         </Grid>
                     </Border>
@@ -278,6 +280,7 @@
                                 Name="BlizzardBtn"
                                 Style="{StaticResource HomeBtn}"
                                 Click="Bookmark2_Clicked"
+                                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource Grow}, Event=Click}"
                                 >Launch!</Button>
                         </Grid>
                     </Border>

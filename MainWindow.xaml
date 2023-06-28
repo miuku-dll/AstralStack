@@ -109,6 +109,7 @@
                 HorizontalAlignment="Center"
                 BorderThickness="0"
                 Name="CoseBtn"
+                xf:Animations.Primary="{xf:Animate BasedOn={StaticResource Grow}, Event=Click}"
                 Command="{Binding Close_Clicked}"
                 Click="Close_Clicked"
                 Style="{StaticResource CloseBtn}">X

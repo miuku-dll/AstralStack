@@ -20,6 +20,11 @@
                           ScaleX="{StaticResource SmallScaleFactor}"
                           ScaleY="{StaticResource SmallScaleFactor}" />
 
+    <xf:AnimationSettings x:Key="Grow"
+						  Kind="ScaleXFrom,ScaleYFrom"
+						  ScaleX="{StaticResource SmallScaleFactor}"
+						  ScaleY="{StaticResource SmallScaleFactor}" />
+
     <xf:AnimationSettings x:Key="FadeInAndGrowHorizontally"
                           Kind="FadeFrom,ScaleXFrom"
                           Opacity="0"

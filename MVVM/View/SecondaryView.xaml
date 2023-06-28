@@ -35,7 +35,8 @@
 
             <ToggleButton Margin="626,15,39,15" Height="35" Width="35"
                           Name="SettingsBtn" Click="SettingsBtn_Click"
-                           xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=50}">
+                          xf:Animations.Secondary="{xf:Animate BasedOn={StaticResource Grow}, Event=Click}"
+                           xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=500}">
                 <Image Height="20" Width="20" Stretch="Fill">
                     <Image.Source>
                         <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\cog3.png" />
