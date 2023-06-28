@@ -11,7 +11,7 @@ First time actually using wpf for the user interface so everything looks horribl
 ## General
 
 ### Change blob images
-> Program creates 'images' folder onload, name your images Blob1-8.png (ex. Blob3.png) and place them in the folder
+> Program creates 'images' folder onload, name your images Blob1-8.png(ex. Blob3.png(depending on the spot you wish them to be in)) and place them in the folder
 
 ### Stuff to do
 
