@@ -9,6 +9,7 @@ First time actually using wpf for the user interface so everything looks horribl
 
 ### Stuff to do
 
+> Implement a proper bookmarking method for blobs <br>
 > Auto detect 2 main colors from image for gradient <br>
 > Better way to implement custom images for apps <br>
 >(Done ish) Better way to implement custom apps <br>
