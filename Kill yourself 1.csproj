@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Kill_yourself_1</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Comfortaa.ttf" />
+    <None Remove="Fonts\SegoeUI.ttf" />
+    <None Remove="Images\blizzard.png" />
+    <None Remove="Images\cog.png" />
+    <None Remove="Images\cog3.png" />
+    <None Remove="Images\cs.png" />
+    <None Remove="Images\edit.png" />
+    <None Remove="Images\edit1.png" />
+    <None Remove="Images\girl.png" />
+    <None Remove="Images\home.png" />
+    <None Remove="Images\img.png" />
+    <None Remove="Images\ow2.png" />
+    <None Remove="Images\save.png" />
+    <None Remove="Images\save1.png" />
+    <None Remove="Images\Stack.png" />
+    <None Remove="Images\steam.png" />
+    <None Remove="Images\steamlogo.png" />
+    <None Remove="Images\x.png" />
+    <None Remove="MVVM\View\ow2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\edit1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XamlFlair.WPF" Version="1.2.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Comfortaa.ttf" />
+    <Resource Include="Fonts\SegoeUI.ttf" />
+    <Resource Include="Images\blizzard.png" />
+    <Resource Include="Images\cog.png" />
+    <Resource Include="Images\cog3.png" />
+    <Resource Include="Images\cs.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\girl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\img.png" />
+    <Resource Include="Images\ow2.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\save1.png" />
+    <Resource Include="Images\Stack.png" />
+    <Resource Include="Images\steam.png" />
+    <Resource Include="Images\steamlogo.png" />
+    <Resource Include="Images\x.png" />
+    <Resource Include="MVVM\View\ow2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

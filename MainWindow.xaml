@@ -1,0 +1,115 @@
+<Window x:Class="Kill_yourself_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kill_yourself_1"
+        xmlns:viewModel="clr-namespace:Kill_yourself_1.MVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        
+        AllowsTransparency="True">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+
+    <Border Background="#191919"
+            CornerRadius="20"
+            MouseLeftButtonDown="WindowMouseLeftButtonDown">
+
+
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Image Width="25"
+                   Height="25"
+                   Name="logo"
+                   HorizontalAlignment="Left" Margin="15,25,0,25">
+                <Image.Source>
+                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\Stack.png" />
+                </Image.Source>
+            </Image>
+
+            <TextBlock Text="AstralStack"
+                       
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Foreground="#ffffff"
+                   FontSize="22" Margin="51,0,0,0"/>
+
+
+
+            <StackPanel Grid.Row="1">
+
+                <RadioButton Content="Home"
+                             Height="45"
+                             Foreground="#FFF"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand}"/>
+
+
+                <RadioButton Content="Library"
+                             Height="45"
+                             Foreground="#FFF"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                              Command="{Binding SecondaryViewCommand}"/>
+
+                <RadioButton Content="Misc"
+                             Height="45"
+                             Foreground="#FFF"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+
+
+            </StackPanel>
+
+            <TextBox Width="250"
+                     Height="35"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="5"
+                     Grid.Column="1"
+                     Style="{StaticResource ModernTextbox}"/>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
+
+
+            <Button
+                Grid.Column="1"
+                Margin="674,18,10,17"
+                FontSize="19"
+                Height="40"
+                BorderThickness="0"
+                Name="cmdCommand"
+                Command="{Binding Close_Clicked}"
+                Click="Close_Clicked"
+                Style="{StaticResource CloseBtn}">X</Button>
+
+        </Grid>
+
+
+
+
+    </Border>
+</Window>

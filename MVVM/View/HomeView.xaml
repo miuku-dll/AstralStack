@@ -1,0 +1,292 @@
+<UserControl x:Class="Kill_yourself_1.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kill_yourself_1.MVVM.View"
+             xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF"
+             mc:Ignorable="d" d:DesignWidth="700" Height="523">
+    <StackPanel>
+        <TextBlock Text="Discover"
+                   Foreground="#c8c8c8"
+                   FontSize="26"
+                   HorizontalAlignment="Left"
+                   Margin="0,5,0,20"
+                   xf:Animations.Primary="{StaticResource FadeIn}"/>
+
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,15"
+                    >
+            <Border Width="400"
+                    Height="200"
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=50}">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Welcome to&#x0a;The Astral Stack!"
+                                   Foreground="white"
+                                   FontSize="26"
+                                   Margin="20,20,10,0"
+                                   />
+
+                        <TextBlock Text="Get started today!"
+                                   Foreground="white"
+                                   FontSize="18"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+
+                    <Image Width="443"
+                           Height="395"
+                           Source="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\girl.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom" Margin="0,0,-139,-105" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="11.076"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+            </Border>
+
+
+            <Border Width="200"
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="45, 0,0,0"
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=100}">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#FFF8B6FF" Offset="0.0"/>
+                        <GradientStop Color="#FF7C50B3" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+
+
+
+            </Border>
+        </StackPanel>
+
+        <StackPanel>
+
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Bookmarked"
+                       Foreground="#c8c8c8"
+                       FontSize="20"
+                       Margin="0,0,0,10"
+                       xf:Animations.Primary="{StaticResource FadeIn}"/>
+
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal"
+                    Margin="-15,0,0,0">
+                    <Border Width="300"
+                    Height="150"
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=150}">
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#FFDC8755" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="1.5"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,300,150"/>
+                        </Border.Clip>
+
+                        <Grid>
+
+                            <StackPanel>
+                                <TextBlock Text="Your Favourite"
+                                   Foreground="white"
+                                   FontSize="22"
+                                   Margin="10,10,10,0"/>
+
+                                <TextBlock Text="Overwatch 2"
+                                      Foreground="white"
+                                   FontSize="26"
+                                   Margin="10,-5,10,0" FontFamily="Segoe UI Semibold"/>
+
+                            </StackPanel>
+
+                            <Image Width="416"
+                           Height="337"
+                           Source="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\ow2.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom" Margin="0,0,-238,-178" RenderTransformOrigin="0.5,0.5">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleX="5.689"/>
+                                        <RotateTransform Angle="-7.024"/>
+                                        <TranslateTransform X="-11.635" Y="-2.278"/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <Button
+                                Margin="10,105,215,10"
+                                FontSize="16"
+                                Name="cmdCommand"
+                                Style="{StaticResource HomeBtn}"
+                                Click="Button_Clicked" RenderTransformOrigin="0.709,-1.014"
+                                >Play!</Button>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+
+
+                <StackPanel Orientation="Horizontal"
+                    Margin="14,0,0,0">
+                    <Border Width="150"
+                    Height="150"
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=200}">
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#1f4d6e" Offset="0"/>
+                                <GradientStop Color="#202539" Offset="0.6"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,150,150"/>
+                        </Border.Clip>
+
+                        <Grid>
+                            <Image Width="249"
+                           Height="381"
+                           Source="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\XAXA.png"
+                           HorizontalAlignment="Right"
+                           
+                           VerticalAlignment="Bottom" Margin="0,0,-63,-28" RenderTransformOrigin="0.383,0.358">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1"/>
+                                        <SkewTransform AngleX="-2.807" AngleY="-0.477"/>
+                                        <RotateTransform Angle="360.179"/>
+                                        <TranslateTransform X="-20.682" Y="-0.603"/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <StackPanel>
+                                <TextBlock Text="Bookmarked"
+                                   Foreground="white"
+                                   FontSize="22"
+                                   Margin="10,10,10,0"/>
+
+                                <TextBlock Text="Steam"
+                                      Foreground="white"
+                                   FontSize="26"
+                                   Margin="10,-5,10,0" FontFamily="Segoe UI Semibold"/>
+
+                            </StackPanel>
+
+                            <Button
+                                Margin="10,104,59,10"
+                                FontSize="16"
+                                Name="SteamBtn"
+                                Style="{StaticResource HomeBtn}"
+                                Click="Bookmark1_Clicked"
+                                >Launch!</Button>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,0">
+                    <Border Width="150"
+                    Height="150"
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=250}">
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#FF3464A0" Offset="0"/>
+                                <GradientStop Color="#15171e" Offset="0.8"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,150,150"/>
+                        </Border.Clip>
+
+                        <Grid>
+                            <Image Width="291"
+                           Height="199"
+                           Source="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\Blizzard.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom" Margin="0,0,-123,-81" RenderTransformOrigin="0.5,0.5">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleX="-2.807"/>
+                                        <RotateTransform Angle="380.655"/>
+                                        <TranslateTransform X="-23.553" Y="0.277"/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <StackPanel>
+                                <TextBlock Text="Bookmarked"
+                                   Foreground="white"
+                                   FontSize="22"
+                                   Margin="10,10,10,0"/>
+
+                                <TextBlock Text="Battle.net"
+                                      Foreground="white"
+                                   FontSize="26"
+                                   Margin="10,-5,10,0" FontFamily="Segoe UI Semibold"/>
+
+                            </StackPanel>
+
+                            <Button
+                                Margin="10,104,59,10"
+                                FontSize="16"
+                                Name="BlizzardBtn"
+                                Style="{StaticResource HomeBtn}"
+                                Click="Bookmark2_Clicked"
+                                >Launch!</Button>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+
+
+
+            </StackPanel>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>
