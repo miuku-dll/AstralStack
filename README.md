@@ -1,6 +1,6 @@
 ## Simple 'loader' for your favourite / most used apps
 
-![Astral Stack](https://media.discordapp.net/attachments/908858749119258637/1123580449227296838/AstralStack.png)
+![Astral Stack](https://media.discordapp.net/attachments/908858749119258637/1123580768317345933/AstralStackSmall.png)
 
 ### Info
 First time actually using wpf for the user interface so everything looks horrible(ish) 
