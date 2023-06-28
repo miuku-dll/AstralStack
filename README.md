@@ -1,7 +1,6 @@
-## Simple 'loader' for your favourite / most used apps
-
 ![Astral Stack](https://media.discordapp.net/attachments/908858749119258637/1123581107481366599/AstralSmall.png)
 
+### Simple 'loader' for your favourite / most used apps
 ### Info
 First time actually using wpf for the user interface so everything looks horrible(ish) 
 
