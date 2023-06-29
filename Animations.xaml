@@ -20,6 +20,11 @@
                           ScaleX="{StaticResource SmallScaleFactor}"
                           ScaleY="{StaticResource SmallScaleFactor}" />
 
+    <xf:AnimationSettings x:Key="FadeInAndSlideFromLeft"
+                          Kind="FadeFrom, FadeIn"
+                          Opacity="0"
+                          OffsetX="{StaticResource NegativeOffset}" />
+
     <xf:AnimationSettings x:Key="Grow"
 						  Kind="ScaleXFrom,ScaleYFrom"
 						  ScaleX="{StaticResource SmallScaleFactor}"
