@@ -39,3 +39,6 @@ First time actually using wpf for the user interface so everything looks horribl
 
 #### Error code 104
 > Failed to bookmark application
+
+#### Error code 105
+> Failed to copy bookmark image
