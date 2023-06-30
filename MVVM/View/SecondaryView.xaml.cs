@@ -31,7 +31,33 @@ namespace Kill_yourself_1.MVVM.View
             InitializeComponent();
         }
 
-        
+
+        public static void Save()
+        {
+            Settings.Default.Save();
+        }
+
+        public static void Reload()
+        {
+            Settings.Default.Reload();
+        }
+
+        private string Picked = string.Empty;
+
+        public void FilePick()
+        {
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            dlg.DefaultExt = ".exe";
+            Nullable<bool> result = dlg.ShowDialog();
+            if (result == true)
+            {
+                string filename = dlg.FileName;
+
+                Picked = filename;
+
+            }
+        }
+       
 
 
 
@@ -77,8 +103,10 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             { }
-                
+
         }
+
+     
 
 
         private void SettingsBtn_Click(object sender, RoutedEventArgs e)
@@ -123,8 +151,7 @@ namespace Kill_yourself_1.MVVM.View
             {
                 Settings.Default.Blob1Path = SelectedFileTXTBox.Text;
                 MessageBox.Show("Saved Blob1");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -139,8 +166,7 @@ namespace Kill_yourself_1.MVVM.View
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob1Path;
                 Settings.Default.BookmarkImg = "Blob1.png";
                 MessageBox.Show("Bookmarked Blob1");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -148,38 +174,14 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn1_Click(object sender, RoutedEventArgs e)
+        public void FileBtn1_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob1Path = filename;
-                        MessageBox.Show("Saved Blob1");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob1Path = Picked;
+                MessageBox.Show("Saved Blob1");
+                Save(); Reload();         
             }
             catch
             {
@@ -220,8 +222,7 @@ namespace Kill_yourself_1.MVVM.View
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob2Path;
                 Settings.Default.BookmarkImg = "Blob2.png";
                 MessageBox.Show("Bookmarked Blob2");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -229,38 +230,14 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn2_Click(object sender, RoutedEventArgs e)
+        public void FileBtn2_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob2Path = filename;
-                        MessageBox.Show("Saved Blob2");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob2Path = Picked;
+                MessageBox.Show("Saved Blob2");
+                Save(); Reload();
             }
             catch
             {
@@ -289,8 +266,7 @@ namespace Kill_yourself_1.MVVM.View
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob3Path;
                 Settings.Default.BookmarkImg = "Blob3.png";
                 MessageBox.Show("Bookmarked Blob3");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -298,38 +274,14 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn3_Click(object sender, RoutedEventArgs e)
+        public void FileBtn3_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob3Path = filename;
-                        MessageBox.Show("Saved Blob3");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob3Path = Picked;
+                MessageBox.Show("Saved Blob3");
+                Save(); Reload();
             }
             catch
             {
@@ -357,8 +309,7 @@ namespace Kill_yourself_1.MVVM.View
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob4Path;
                 Settings.Default.BookmarkImg = "Blob4.png";
                 MessageBox.Show("Bookmarked Blob4");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -366,38 +317,14 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn4_Click(object sender, RoutedEventArgs e)
+        public void FileBtn4_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob4Path = filename;
-                        MessageBox.Show("Saved Blob4");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob4Path = Picked;
+                MessageBox.Show("Saved Blob4");
+                Save(); Reload();
             }
             catch
             {
@@ -425,8 +352,7 @@ namespace Kill_yourself_1.MVVM.View
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob5Path;
                 Settings.Default.BookmarkImg = "Blob5.png";
                 MessageBox.Show("Bookmarked Blob5");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -434,38 +360,15 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn5_Click(object sender, RoutedEventArgs e)
+
+        public void FileBtn5_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob5Path = filename;
-                        MessageBox.Show("Saved Blob5");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob5Path = Picked;
+                MessageBox.Show("Saved Blob5");
+                Save(); Reload();
             }
             catch
             {
@@ -502,38 +405,14 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn6_Click(object sender, RoutedEventArgs e)
+        public void FileBtn6_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob6Path = filename;
-                        MessageBox.Show("Saved Blob6");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob6Path = Picked;
+                MessageBox.Show("Saved Blob6");
+                Save(); Reload();
             }
             catch
             {
@@ -561,8 +440,7 @@ namespace Kill_yourself_1.MVVM.View
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob7Path;
                 Settings.Default.BookmarkImg = "Blob7.png";
                 MessageBox.Show("Bookmarked Blob7");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -570,38 +448,14 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn7_Click(object sender, RoutedEventArgs e)
+        public void FileBtn7_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob7Path = filename;
-                        MessageBox.Show("Saved Blob7");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob7Path = Picked;
+                MessageBox.Show("Saved Blob7");
+                Save(); Reload();
             }
             catch
             {
@@ -629,8 +483,7 @@ namespace Kill_yourself_1.MVVM.View
                 Settings.Default.BookmarkImg = "Blob8.png";
 
                 MessageBox.Show("Bookmarked Blob8");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Save(); Reload();
             }
             catch
             {
@@ -638,44 +491,20 @@ namespace Kill_yourself_1.MVVM.View
             }
         }
 
-        private void FileBtn8_Click(object sender, RoutedEventArgs e)
+        public void FileBtn8_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Create OpenFileDialog 
-                Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-                // Set filter for file extension and default file extension 
-                dlg.DefaultExt = ".exe";
-
-                // Display OpenFileDialog by calling ShowDialog method 
-                Nullable<bool> result = dlg.ShowDialog();
-
-
-                // Get the selected file name and display in a TextBox 
-                if (result == true)
-                {
-                    // Open document 
-                    string filename = dlg.FileName;
-
-                    try
-                    {
-                        Settings.Default.Blob8Path = filename;
-                        MessageBox.Show("Saved Blob8");
-                        Settings.Default.Save();
-                        Settings.Default.Reload();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error 102");
-                    }
-                }
+                FilePick();
+                Settings.Default.Blob8Path = Picked;
+                MessageBox.Show("Saved Blob8");
+                Save(); Reload();
             }
             catch
             {
                 MessageBox.Show("Error 101");
             }
         }
-
     }
+
 }
