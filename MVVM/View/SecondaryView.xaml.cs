@@ -20,9 +20,6 @@ using System.Windows.Shapes;
 
 namespace Kill_yourself_1.MVVM.View
 {
-    /// <summary>
-    /// Interaction logic for SecondaryView.xaml
-    /// </summary>
     public partial class SecondaryView : UserControl
     {
         public SecondaryView()
