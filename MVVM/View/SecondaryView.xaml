@@ -233,7 +233,7 @@
 
                             <Button
                             Style="{StaticResource LibBtn}"
-                           Click="Blob2_Clicked">
+                           Click="Blob3_Clicked">
                             </Button>
 
                         </Grid>
@@ -292,7 +292,7 @@
 
                             <Button
                             Style="{StaticResource LibBtn}"
-                           Click="Blob2_Clicked">
+                           Click="Blob4_Clicked">
                             </Button>
 
                         </Grid>
@@ -367,7 +367,7 @@
 
                             <Button
                             Style="{StaticResource LibBtn}"
-                           Click="Blob1_Clicked">
+                           Click="Blob5_Clicked">
                             </Button>
                         </Grid>
                     </Border>
@@ -425,7 +425,7 @@
 
                             <Button
                             Style="{StaticResource LibBtn}"
-                           Click="Blob2_Clicked">
+                           Click="Blob6_Clicked">
                             </Button>
 
                         </Grid>
@@ -486,7 +486,7 @@
 
                             <Button
                             Style="{StaticResource LibBtn}"
-                           Click="Blob2_Clicked">
+                           Click="Blob7_Clicked">
                             </Button>
 
                         </Grid>
@@ -545,7 +545,7 @@
 
                             <Button
                             Style="{StaticResource LibBtn}"
-                           Click="Blob2_Clicked">
+                           Click="Blob8_Clicked">
                             </Button>
 
                         </Grid>

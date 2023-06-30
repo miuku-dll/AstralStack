@@ -1,3 +1,4 @@
+using Kill_yourself_1.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,8 @@ namespace Kill_yourself_1
         {
             InitializeComponent();
 
+          
 
-            
         }
 
         private void WindowMouseLeftButtonDown(object sender, MouseButtonEventArgs e)

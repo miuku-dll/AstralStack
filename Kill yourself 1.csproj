@@ -19,6 +19,7 @@
     <None Remove="Images\cs.png" />
     <None Remove="Images\edit.png" />
     <None Remove="Images\edit1.png" />
+    <None Remove="Images\edit2.png" />
     <None Remove="Images\girl.png" />
     <None Remove="Images\home.png" />
     <None Remove="Images\img.png" />
@@ -54,6 +55,7 @@
     <Resource Include="Images\cog3.png" />
     <Resource Include="Images\cs.png" />
     <Resource Include="Images\edit.png" />
+    <Resource Include="Images\edit2.png" />
     <Resource Include="Images\girl.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

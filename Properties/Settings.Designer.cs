@@ -134,12 +134,48 @@ namespace Kill_yourself_1.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string BookmarkImg {
+        public string Bookmark1Img {
             get {
-                return ((string)(this["BookmarkImg"]));
+                return ((string)(this["Bookmark1Img"]));
             }
             set {
-                this["BookmarkImg"] = value;
+                this["Bookmark1Img"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Bookmark2 {
+            get {
+                return ((string)(this["Bookmark2"]));
+            }
+            set {
+                this["Bookmark2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Bookmark2Img {
+            get {
+                return ((string)(this["Bookmark2Img"]));
+            }
+            set {
+                this["Bookmark2Img"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte Deleteblob11 {
+            get {
+                return ((byte)(this["Deleteblob11"]));
+            }
+            set {
+                this["Deleteblob11"] = value;
             }
         }
     }

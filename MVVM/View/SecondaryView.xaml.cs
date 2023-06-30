@@ -17,6 +17,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Kill_yourself_1.MVVM.View;
+using KYS.Core;
 
 namespace Kill_yourself_1.MVVM.View
 {
@@ -29,16 +31,6 @@ namespace Kill_yourself_1.MVVM.View
         }
 
         // Useful
-
-        public static void Save()
-        {
-            Settings.Default.Save();
-        }
-
-        public static void Reload()
-        {
-            Settings.Default.Reload();
-        }
 
         private string Picked = string.Empty; // For application picking
 
@@ -54,28 +46,9 @@ namespace Kill_yourself_1.MVVM.View
         }
 
 
-        // Error codes
+        // Error handling
 
-        public static void Error101()
-        {
-            MessageBox.Show("Error 101"); //Failed to find a executeable to save
-        }
-
-        public static void Error102()
-        {
-            MessageBox.Show("Error 102"); //Failed to save executeable to config
-        }
-
-        public static void Error103()
-        {
-            MessageBox.Show("Error 103"); //Failed to start bookmarked application
-        }
-
-        public static void Error104()
-        {
-            MessageBox.Show("Error 104"); // Failed to bookmark application
-        }
-
+        
 
         // General
 
@@ -87,22 +60,6 @@ namespace Kill_yourself_1.MVVM.View
         private void cs_Clicked(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("C:\\Program Files (x86)\\Steam\\Steam.exe");
-        }
-
-        private void FileBtn_Click(object sender, RoutedEventArgs e)
-        {
-            FilePick();
-        }
-
-        private void First_Clicked(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start(SelectedFileTXTBox.Text);
-
-            }
-            catch
-            { }
         }
 
         private void SettingsBtn_Click(object sender, RoutedEventArgs e)
@@ -138,50 +95,33 @@ namespace Kill_yourself_1.MVVM.View
 
         }
 
-
-
-
-        private void SaveBlob1_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                Settings.Default.Blob1Path = SelectedFileTXTBox.Text;
-                MessageBox.Show("Saved Blob1");
-                Save(); Reload();
-            }
-            catch
-            {
-                Error102();
-            }
-        }
-
         private void BlobBookmark1_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob1Path;
-                Settings.Default.BookmarkImg = "Blob1.png";
+                Settings.Default.Bookmark1Img = "Blob1.png";
                 MessageBox.Show("Bookmarked Blob1");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
-        public void FileBtn1_Click(object sender, RoutedEventArgs e)
+        private void FileBtn1_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 FilePick();
                 Settings.Default.Blob1Path = Picked;
                 MessageBox.Show("Saved Blob1");
-                Save(); Reload();         
+                Handling.QuickSave();
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
 
@@ -193,7 +133,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
             
         }
@@ -206,7 +146,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
 
         }
@@ -216,28 +156,30 @@ namespace Kill_yourself_1.MVVM.View
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob2Path;
-                Settings.Default.BookmarkImg = "Blob2.png";
+                Settings.Default.Bookmark1Img = "Blob2.png";
                 MessageBox.Show("Bookmarked Blob2");
-                Save(); Reload();
+                Handling.QuickSave();
+
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
-        public void FileBtn2_Click(object sender, RoutedEventArgs e)
+        private void FileBtn2_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 FilePick();
                 Settings.Default.Blob2Path = Picked;
                 MessageBox.Show("Saved Blob2");
-                Save(); Reload();
+                Handling.QuickSave();
+
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
 
@@ -250,7 +192,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
 
         }
@@ -260,28 +202,29 @@ namespace Kill_yourself_1.MVVM.View
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob3Path;
-                Settings.Default.BookmarkImg = "Blob3.png";
+                Settings.Default.Bookmark1Img = "Blob3.png";
                 MessageBox.Show("Bookmarked Blob3");
-                Save(); Reload();
+                Handling.QuickSave();
+
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
-        public void FileBtn3_Click(object sender, RoutedEventArgs e)
+        private void FileBtn3_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 FilePick();
                 Settings.Default.Blob3Path = Picked;
                 MessageBox.Show("Saved Blob3");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
 
@@ -293,7 +236,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
 
         }
@@ -303,13 +246,13 @@ namespace Kill_yourself_1.MVVM.View
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob4Path;
-                Settings.Default.BookmarkImg = "Blob4.png";
+                Settings.Default.Bookmark1Img = "Blob4.png";
                 MessageBox.Show("Bookmarked Blob4");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
@@ -320,11 +263,11 @@ namespace Kill_yourself_1.MVVM.View
                 FilePick();
                 Settings.Default.Blob4Path = Picked;
                 MessageBox.Show("Saved Blob4");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
 
@@ -336,7 +279,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                    Handling.Error101();
             }
 
         }
@@ -346,13 +289,13 @@ namespace Kill_yourself_1.MVVM.View
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob5Path;
-                Settings.Default.BookmarkImg = "Blob5.png";
+                Settings.Default.Bookmark1Img = "Blob5.png";
                 MessageBox.Show("Bookmarked Blob5");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
@@ -364,11 +307,11 @@ namespace Kill_yourself_1.MVVM.View
                 FilePick();
                 Settings.Default.Blob5Path = Picked;
                 MessageBox.Show("Saved Blob5");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
 
@@ -380,7 +323,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
 
         }
@@ -390,14 +333,13 @@ namespace Kill_yourself_1.MVVM.View
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob6Path;
-                Settings.Default.BookmarkImg = "Blob6.png";
+                Settings.Default.Bookmark1Img = "Blob6.png";
                 MessageBox.Show("Bookmarked Blob6");
-                Settings.Default.Save();
-                Settings.Default.Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
@@ -408,11 +350,11 @@ namespace Kill_yourself_1.MVVM.View
                 FilePick();
                 Settings.Default.Blob6Path = Picked;
                 MessageBox.Show("Saved Blob6");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
 
@@ -424,7 +366,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
 
         }
@@ -434,13 +376,13 @@ namespace Kill_yourself_1.MVVM.View
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob7Path;
-                Settings.Default.BookmarkImg = "Blob7.png";
+                Settings.Default.Bookmark1Img = "Blob7.png";
                 MessageBox.Show("Bookmarked Blob7");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
@@ -451,11 +393,11 @@ namespace Kill_yourself_1.MVVM.View
                 FilePick();
                 Settings.Default.Blob7Path = Picked;
                 MessageBox.Show("Saved Blob7");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
 
@@ -467,7 +409,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
 
         }
@@ -476,14 +418,14 @@ namespace Kill_yourself_1.MVVM.View
             try
             {
                 Settings.Default.Bookmark1 = Properties.Settings.Default.Blob8Path;
-                Settings.Default.BookmarkImg = "Blob8.png";
+                Settings.Default.Bookmark1Img = "Blob8.png";
 
                 MessageBox.Show("Bookmarked Blob8");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error103();
+                Handling.Error103();
             }
         }
 
@@ -494,11 +436,11 @@ namespace Kill_yourself_1.MVVM.View
                 FilePick();
                 Settings.Default.Blob8Path = Picked;
                 MessageBox.Show("Saved Blob8");
-                Save(); Reload();
+                Handling.QuickSave();
             }
             catch
             {
-                Error101();
+                Handling.Error101();
             }
         }
     }

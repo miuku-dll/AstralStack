@@ -128,36 +128,50 @@
                                    FontSize="22"
                                    Margin="10,10,10,0"/>
 
-                                <TextBlock Text="Overwatch 2"
+                                <TextBlock Text="Application"
                                       Foreground="white"
                                    FontSize="26"
                                    Margin="10,-5,10,0" FontFamily="Segoe UI Semibold"/>
 
                             </StackPanel>
 
-                            <Image Width="416"
-                           Height="337"
-                           Source="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\ow2.png"
+                            <Image Width="340"
+                           Height="410"
+                           Source="pack://siteoforigin:,,,/Images/Blob11.png"
                            HorizontalAlignment="Right"
-                           VerticalAlignment="Bottom" Margin="0,0,-238,-178" RenderTransformOrigin="0.5,0.5">
+                           VerticalAlignment="Bottom" Margin="0,0,-135,-209" RenderTransformOrigin="0.5,0.5">
                                 <Image.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
-                                        <SkewTransform AngleX="5.689"/>
-                                        <RotateTransform Angle="-7.024"/>
-                                        <TranslateTransform X="-11.635" Y="-2.278"/>
+                                        <SkewTransform AngleX="-0.485"/>
+                                        <RotateTransform Angle="2.631"/>
+                                        <TranslateTransform X="-21.216" Y="-1.098"/>
                                     </TransformGroup>
                                 </Image.RenderTransform>
                             </Image>
 
-                            <Button
-                                Margin="10,105,215,10"
+                            <StackPanel Height="50" Width="300" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                                <Button
+                                Margin="20,0,0,0"
+                                Width="80"
+                                Height="35"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
                                 FontSize="16"
                                 Name="cmdCommand"
                                 Style="{StaticResource HomeBtn}"
                                 Click="Button_Clicked" RenderTransformOrigin="0.709,-1.014"
                                 xf:Animations.Primary="{xf:Animate BasedOn={StaticResource Grow}, Event=Click}"
                                 >Play!</Button>
+
+                                <Button Click="Bookmark1Edit_Click" Style="{StaticResource BlobBtn}" Width="30" Height="30" Margin="10,-15,0,0" Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0">
+                                    <Image Height="15" Width="15" Stretch="Fill">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="20" DecodePixelHeight="20" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\edit2.png" />
+                                        </Image.Source>
+                                    </Image>
+                                </Button>
+                            </StackPanel>
                         </Grid>
                     </Border>
                 </StackPanel>

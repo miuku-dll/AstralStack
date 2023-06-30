@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.Common;
+using System.DirectoryServices.ActiveDirectory;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +16,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Kill_yourself_1.MVVM.View;
+using Kill_yourself_1.Properties;
+using KYS.Core;
 
 namespace Kill_yourself_1.MVVM.View
 {
@@ -23,9 +30,6 @@ namespace Kill_yourself_1.MVVM.View
         public HomeView()
         {
             InitializeComponent();
-
-
-
         }
 
         private void Button_Clicked(object sender, RoutedEventArgs e)
@@ -41,13 +45,32 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 104");
+                Handling.Error103();
             }
         }
 
         private void Bookmark2_Clicked(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Program Files (x86)\\Battle.net\\Battle.Net Launcher.exe");
+            try
+            {
+                Handling.BookmarkImg1();
+            }
+            catch
+            {
+                Handling.Error103();
+            }
+        }
+
+        private void Bookmark1Edit_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Handling.BookmarkImg1();
+            }
+            catch
+            {
+                Handling.Error103();
+            }
         }
     }
 }
