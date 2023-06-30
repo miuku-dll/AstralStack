@@ -31,6 +31,7 @@ namespace Kill_yourself_1.MVVM.View
             InitializeComponent();
         }
 
+        // Useful
 
         public static void Save()
         {
@@ -42,7 +43,7 @@ namespace Kill_yourself_1.MVVM.View
             Settings.Default.Reload();
         }
 
-        private string Picked = string.Empty;
+        private string Picked = string.Empty; // For application picking
 
         public void FilePick()
         {
@@ -51,15 +52,35 @@ namespace Kill_yourself_1.MVVM.View
             Nullable<bool> result = dlg.ShowDialog();
             if (result == true)
             {
-                string filename = dlg.FileName;
-
-                Picked = filename;
-
+                Picked = dlg.FileName; // Stating what application is picked
             }
         }
-       
 
 
+        // Error codes
+
+        public static void Error101()
+        {
+            MessageBox.Show("Error 101"); //Failed to find a executeable to save
+        }
+
+        public static void Error102()
+        {
+            MessageBox.Show("Error 102"); //Failed to save executeable to config
+        }
+
+        public static void Error103()
+        {
+            MessageBox.Show("Error 103"); //Failed to start bookmarked application
+        }
+
+        public static void Error104()
+        {
+            MessageBox.Show("Error 104"); // Failed to bookmark application
+        }
+
+
+        // General
 
         private void ow2_Clicked(object sender, RoutedEventArgs e)
         {
@@ -73,25 +94,7 @@ namespace Kill_yourself_1.MVVM.View
 
         private void FileBtn_Click(object sender, RoutedEventArgs e)
         {
-            // Create OpenFileDialog 
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-
-
-            // Set filter for file extension and default file extension 
-            dlg.DefaultExt = ".exe";
-
-            // Display OpenFileDialog by calling ShowDialog method 
-            Nullable<bool> result = dlg.ShowDialog();
-
-
-            // Get the selected file name and display in a TextBox 
-            if (result == true)
-            {
-                // Open document 
-                string filename = dlg.FileName;
-                SelectedFileTXTBox.Text = filename;
-            }
+            FilePick();
         }
 
         private void First_Clicked(object sender, RoutedEventArgs e)
@@ -103,17 +106,13 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             { }
-
         }
-
-     
-
 
         private void SettingsBtn_Click(object sender, RoutedEventArgs e)
         {
             if (SettingsBtn.IsChecked == true)
             {
-                this.Blob1.Visibility = Visibility.Visible;
+                this.Blob1.Visibility = Visibility.Visible; // Just ewww
                 this.Blob2.Visibility = Visibility.Visible;
                 this.Blob3.Visibility = Visibility.Visible;
                 this.Blob4.Visibility = Visibility.Visible;
@@ -155,7 +154,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 102");
+                Error102();
             }
         }
 
@@ -170,7 +169,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -185,7 +184,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
 
@@ -197,7 +196,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
             
         }
@@ -210,7 +209,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
 
         }
@@ -226,7 +225,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -241,7 +240,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
 
@@ -254,7 +253,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
 
         }
@@ -270,7 +269,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -285,7 +284,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
 
@@ -297,7 +296,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
 
         }
@@ -313,7 +312,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -328,7 +327,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
 
@@ -340,7 +339,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
 
         }
@@ -356,7 +355,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -372,7 +371,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
 
@@ -384,7 +383,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
 
         }
@@ -401,7 +400,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -416,7 +415,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
 
@@ -428,7 +427,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
 
         }
@@ -444,7 +443,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -459,7 +458,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
 
@@ -471,7 +470,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
 
         }
@@ -487,7 +486,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 103");
+                Error103();
             }
         }
 
@@ -502,7 +501,7 @@ namespace Kill_yourself_1.MVVM.View
             }
             catch
             {
-                MessageBox.Show("Error 101");
+                Error101();
             }
         }
     }
