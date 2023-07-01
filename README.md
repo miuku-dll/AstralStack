@@ -59,7 +59,6 @@ The Astral Stack Releases Format is: (dd/MM/yyyy)
 The Astral Stack Project is under the MIT License.
 
 - [Astral Stack, uses the XamlFlair to work.](https://github.com/XamlFlair/XamlFlair)
-- [Spinning Gradient by me (you can take it and put in into your personal projects, idc.](https://gist.github.com/ItzzExcel/6bece91fcd3388618dde3de6bcab4a60)
 
 ### Screenshots
 <img src="" width="600px">
