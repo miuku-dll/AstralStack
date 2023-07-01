@@ -4,7 +4,7 @@
 </p>
 <p align="center">
 <img src="https://dcbadge.vercel.app/api/shield/788840668654338080">
-<a href="https://discord.gg/SHZ53AJsSc">
+<a href="https://discord.gg/HBDjf9P5sP">
 <img src="https://dcbadge.vercel.app/api/server/HBDjf9P5sP">
 </a>
 </p>
