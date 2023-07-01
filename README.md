@@ -10,7 +10,7 @@
 </p>
 <h3 align="center">A Light Loader For You Applications</h3>
 
-Astral Stack, is a free personal application dashboard, minimal and easy to use. <br>
+Astral Stack, is a free personal application dashboard under the name of Astral, minimal and easy to use. <br>
 Some features are not yet working, due to laziness. [Learn More](link) <br>
 If you have knowledge of c# + wpf, you can edit source of Astral and create a pull request. <br>
 Astral stack uses wpf for its UI and c# for its backend.
