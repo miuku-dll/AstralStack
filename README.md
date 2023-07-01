@@ -5,7 +5,7 @@
 <p align="center">
 <img src="https://dcbadge.vercel.app/api/shield/788840668654338080">
 <a href="https://discord.gg/SHZ53AJsSc">
-<img src="https://dcbadge.vercel.app/api/server/SHZ53AJsSc">
+<img src="https://dcbadge.vercel.app/api/server/HBDjf9P5sP">
 </a>
 </p>
 <h3 align="center">A Light Loader For You Applications</h3>
