@@ -48,7 +48,7 @@ Created by the necessity to have a open-source and easy to use launcher for <bol
 
 About Astral Stack
 
-- [Sutes's GitHub Profile](https://github.com/yurkyu/AstralStack/)
+- [Sutes's GitHub Profile](https://github.com/yurkyu/)
 - [Sute's Server (Discord Server)](https://discord.gg/SHZ53AJsSc)
 
 Astral Stack is a Open-Source Tool.
