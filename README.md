@@ -24,15 +24,6 @@ To edit the application, first re-build the project, for any reason, then the in
 
 ### Don't ask why half of the commits are 'useless'.
 
-## How to use?
-Download the latest release from >releases and run the software.
-
-#### How to change the images?
-- Main images, Blob1-8.png depending on their location on the grid.
-
-#### How to add applications?
-- Press the gear button on the top left of the 'library' tab, then press the 'edit' icon next to the blob you wish to edit.
-
 ## Showcase
 
 [![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123530021328388146/demo4.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1123530001791340635/2023-06-28_11-25-12.mp4)
