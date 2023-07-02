@@ -19,15 +19,24 @@
     </Window.DataContext>
 
 
-    <Border Background="#191919"
+    <Border
             CornerRadius="20"
             MouseLeftButtonDown="WindowMouseLeftButtonDown">
 
 
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#38424e" Offset="0.0"/>
+                <GradientStop Color="#1b2128" Offset="0.8"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        
         <Grid >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="32.052"/>
+                <ColumnDefinition Width="167.948"/>
+                <ColumnDefinition Width="79*"/>
+                <ColumnDefinition Width="161*"/>
 
             </Grid.ColumnDefinitions>
 
@@ -37,30 +46,20 @@
             </Grid.RowDefinitions>
 
 
-            <Image Width="25"
-                   Height="25"
+            <Image Width="182"
                    Name="logo"
-                   HorizontalAlignment="Left" Margin="15,25,0,25">
+                   HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Margin="16,0,0,0">
                 <Image.Source>
-                    <BitmapImage DecodePixelWidth="30" DecodePixelHeight="30" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\Stack.png" />
+                    <BitmapImage DecodePixelWidth="210" DecodePixelHeight="90" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\logo1.png" />
                 </Image.Source>
             </Image>
 
-            <TextBlock Text="AstralStack"
-                       
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Left"
-                   Foreground="#ffffff"
-                   FontSize="22" Margin="51,0,0,0"/>
 
-
-
-            <StackPanel Grid.Row="1">
+            <Border Grid.Row="1" Grid.ColumnSpan="2" CornerRadius="20" Margin="10,0,0,20" Width="180" Background="#455161" >
+                <StackPanel Margin="0,5,0,0">
 
                 <RadioButton Content="Home"
                              Height="45"
-                             Foreground="#FFF"
-                             FontSize="16"
                              xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=300}"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
@@ -69,37 +68,34 @@
 
                 <RadioButton Content="Library"
                              Height="45"
-                             Foreground="#FFF"
-                             FontSize="16"
                              xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=400}"
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding SecondaryViewCommand}"/>
 
                 <RadioButton Content="Misc"
                              Height="45"
-                             Foreground="#FFF"
-                             FontSize="16"
                              xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=500}"
                              Style="{StaticResource MenuButtonTheme}"/>
 
 
             </StackPanel>
+            </Border>
 
             <TextBox Width="250"
                      Height="35"
                      VerticalContentAlignment="Center"
                      HorizontalAlignment="Left"
-                     Margin="5"
-                     Grid.Column="1"
-                     Style="{StaticResource ModernTextbox}"/>
+                     Margin="5,20,0,20"
+                     Grid.Column="2"
+                     Style="{StaticResource ModernTextbox}" Grid.ColumnSpan="2"/>
 
             <ContentControl Grid.Row="1"
-                            Grid.Column="1"
-                            Margin="10"
-                            Content="{Binding CurrentView}"/>
+                            Grid.Column="2"
+                            Margin="10,10,10,10"
+                            Content="{Binding CurrentView}" Grid.ColumnSpan="2"/>
 
 
-            <StackPanel VerticalAlignment="Center" Grid.Column="1" Margin="0,0,10,0" Width="40" Height="40" HorizontalAlignment="Right">
+            <StackPanel VerticalAlignment="Center" Grid.Column="3" Margin="433,0,0,0" Width="40" Height="40" HorizontalAlignment="Left">
                 <Button
                 Grid.Column="1"
                 FontSize="18"

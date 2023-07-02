@@ -23,6 +23,8 @@
     <None Remove="Images\girl.png" />
     <None Remove="Images\home.png" />
     <None Remove="Images\img.png" />
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\logo1.png" />
     <None Remove="Images\ow2.png" />
     <None Remove="Images\save.png" />
     <None Remove="Images\save1.png" />
@@ -60,6 +62,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\img.png" />
+    <Resource Include="Images\logo.png" />
+    <Resource Include="Images\logo1.png" />
     <Resource Include="Images\ow2.png" />
     <Resource Include="Images\save.png" />
     <Resource Include="Images\save1.png" />

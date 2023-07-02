@@ -8,7 +8,9 @@
                 <ControlTemplate TargetType="{x:Type TextBox}">
 
                     <Border CornerRadius="10"
-                            Background="#303030"
+                            Background="Transparent"
+                            BorderBrush="#4b5766"
+                            BorderThickness="2"
                             Width="200" Height="35">
 
                         <Grid>

@@ -8,8 +8,9 @@
              mc:Ignorable="d" d:DesignWidth="700" Height="523">
     <StackPanel>
         <TextBlock Text="Discover"
-                   Foreground="#c8c8c8"
-                   FontSize="26"
+                   Foreground="#e8e9eb"
+                   FontSize="25"
+                   FontWeight="DemiBold"
                    HorizontalAlignment="Left"
                    Margin="0,5,0,20"
                    xf:Animations.Primary="{StaticResource FadeIn}"/>
@@ -19,12 +20,13 @@
                     >
             <Border Width="400"
                     Height="200"
-                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=50}">
+                    
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndGrow}, Delay=50}">
 
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#79caef" Offset="0.0"/>
+                        <GradientStop Color="#958ef4" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -71,12 +73,12 @@
                     Height="200"
                     CornerRadius="10"
                     Margin="45, 0,0,0"
-                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=100}">
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndGrow}, Delay=100}">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FFF8B6FF" Offset="0.0"/>
-                        <GradientStop Color="#FF7C50B3" Offset="1"/>
+                        <GradientStop Color="#4b5766" Offset="0.0"/>
+                        <GradientStop Color="#455060" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -105,12 +107,12 @@
                     Margin="-15,0,0,0">
                     <Border Width="300"
                     Height="150"
-                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=150}">
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndGrow}, Delay=150}">
 
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                <GradientStop Color="#FFDC8755" Offset="0.1"/>
-                                <GradientStop Color="White" Offset="1.5"/>
+                                <GradientStop Color="#998ff2" Offset="0.0"/>
+                                <GradientStop Color="#8f81ef" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.Background>
 
@@ -182,12 +184,12 @@
                     Margin="14,0,0,0">
                     <Border Width="150"
                     Height="150"
-                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=200}">
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndGrow}, Delay=200}">
 
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                <GradientStop Color="#1f4d6e" Offset="0"/>
-                                <GradientStop Color="#202539" Offset="0.6"/>
+                                <GradientStop Color="#4b5766" Offset="0.0"/>
+                                <GradientStop Color="#455060" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.Background>
 
@@ -200,7 +202,7 @@
                         <Grid>
                             <Image Width="249"
                            Height="381"
-                           Source="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\XAXA.png"
+                           Source="pack://siteoforigin:,,,/Images/Blob12.png"
                            HorizontalAlignment="Right"
                            
                            VerticalAlignment="Bottom" Margin="0,0,-63,-28" RenderTransformOrigin="0.383,0.358">
@@ -244,12 +246,12 @@
                     Margin="0,0,0,0">
                     <Border Width="150"
                     Height="150"
-                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeIn}, Delay=250}">
+                    xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndGrow}, Delay=250}">
 
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                <GradientStop Color="#FF3464A0" Offset="0"/>
-                                <GradientStop Color="#15171e" Offset="0.8"/>
+                                <GradientStop Color="#4b5766" Offset="0.0"/>
+                                <GradientStop Color="#455060" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.Background>
 
@@ -262,7 +264,7 @@
                         <Grid>
                             <Image Width="291"
                            Height="199"
-                           Source="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\Blizzard.png"
+                           Source="pack://siteoforigin:,,,/Images/Blob13.png"
                            HorizontalAlignment="Right"
                            VerticalAlignment="Bottom" Margin="0,0,-123,-81" RenderTransformOrigin="0.5,0.5">
                                 <Image.RenderTransform>
