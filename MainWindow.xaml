@@ -30,13 +30,13 @@
                 <GradientStop Color="#1b2128" Offset="0.8"/>
             </LinearGradientBrush>
         </Border.Background>
-        
+
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="32.052"/>
                 <ColumnDefinition Width="167.948"/>
-                <ColumnDefinition Width="79*"/>
-                <ColumnDefinition Width="161*"/>
+                <ColumnDefinition Width="17*"/>
+                <ColumnDefinition Width="43*"/>
 
             </Grid.ColumnDefinitions>
 
@@ -55,10 +55,10 @@
             </Image>
 
 
-            <Border Grid.Row="1" Grid.ColumnSpan="2" CornerRadius="20" Margin="10,0,0,20" Width="180" Background="#455161" >
+            <Border Grid.Row="1" Grid.ColumnSpan="2" CornerRadius="20" Margin="15,0,5,20" Background="#455161" >
                 <StackPanel Margin="0,5,0,0">
 
-                <RadioButton Content="Home"
+                    <RadioButton Content="Home"
                              Height="45"
                              xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=300}"
                              Style="{StaticResource MenuButtonTheme}"
@@ -66,28 +66,27 @@
                              Command="{Binding HomeViewCommand}"/>
 
 
-                <RadioButton Content="Library"
+                    <RadioButton Content="Library"
                              Height="45"
                              xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=400}"
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding SecondaryViewCommand}"/>
 
-                <RadioButton Content="Misc"
+                    <RadioButton Content="Misc"
                              Height="45"
                              xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndSlideFromLeft}, Delay=500}"
                              Style="{StaticResource MenuButtonTheme}"/>
 
 
-            </StackPanel>
+                </StackPanel>
             </Border>
 
             <TextBox Width="250"
-                     Height="35"
                      VerticalContentAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="5,20,0,20"
+                     HorizontalAlignment="Center"
+                     Margin="0,20,0,20"
                      Grid.Column="2"
-                     Style="{StaticResource ModernTextbox}" Grid.ColumnSpan="2"/>
+                     Style="{StaticResource ModernTextbox}"/>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="2"
