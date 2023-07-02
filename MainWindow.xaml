@@ -55,7 +55,14 @@
             </Image>
 
 
-            <Border Grid.Row="1" Grid.ColumnSpan="2" CornerRadius="20" Margin="15,0,5,10" Background="#455161" >
+            <Border Grid.Row="1" Grid.ColumnSpan="2" CornerRadius="20" Margin="15,0,5,10" >
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#4b5766" Offset="0.0"/>
+                        <GradientStop Color="#455060" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                
                 <StackPanel Margin="0,15,0,0">
 
                     <RadioButton Content="Home"
