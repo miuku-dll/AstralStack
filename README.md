@@ -29,7 +29,7 @@ To edit the application, first re-build the project, for any reason, then the in
 [![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1123530021328388146/demo4.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1123530001791340635/2023-06-28_11-25-12.mp4)
 
 
-#### Astral stack, are not fully developed, due to my laziness <br>
+#### Astral stack, is not fully developed, due to my laziness <br>
 🔴 Alot of the features are still missing, and under 'developement'. I will most likely push them in the near future(ish)</h4>
 
 ## About
@@ -101,3 +101,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+Ps. I know the code is horrendous
