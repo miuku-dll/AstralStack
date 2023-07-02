@@ -26,7 +26,7 @@ To edit the application, first re-build the project, for any reason, then the in
 
 ## Showcase
 
-[![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1125133602326331392/demo5.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1125133656206348378/2023-07-02_21-37-13.mp4)
+[![Demo](https://cdn.discordapp.com/attachments/1115532270892240939/1125133952512962590/demo5.gif)](https://cdn.discordapp.com/attachments/1115532270892240939/1125133656206348378/2023-07-02_21-37-13.mp4)
 
 
 #### Astral stack, are not fully developed, due to my laziness <br>
