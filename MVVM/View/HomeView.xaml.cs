@@ -72,5 +72,33 @@ namespace Kill_yourself_1.MVVM.View
                 Handling.Error103();
             }
         }
+
+        private void Bookmark2Edit_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Handling.BookmarkImg1();
+            }
+            catch
+            {
+                Handling.Error103();
+            }
+        }
+
+        private void SettingsBtn2_Click(object sender, RoutedEventArgs e)
+        {
+            if (SettingsBtn2.IsChecked == true)
+            {
+                this.Blob1.Visibility = Visibility.Visible; // Just ewww
+                this.Blob2.Visibility = Visibility.Visible;
+                this.Blob3.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                this.Blob1.Visibility = Visibility.Hidden;
+                this.Blob2.Visibility = Visibility.Hidden;
+                this.Blob3.Visibility = Visibility.Hidden;
+            }
+        }
     }
 }
