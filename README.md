@@ -61,8 +61,8 @@ The Astral Stack Project is under the MIT License.
 - [Astral Stack, uses the XamlFlair to work.](https://github.com/XamlFlair/XamlFlair)
 
 ### Screenshots
-<img src="" width="600px">
-<img src="" width="600px">
+<img src="https://media.discordapp.net/attachments/1115532270892240939/1125134464570376343/Screenshot_270.png?width=753&height=493" width="600px">
+<img src="https://media.discordapp.net/attachments/1115532270892240939/1125134464889127023/Screenshot_271.png?width=764&height=493" width="600px">
 
 
 ### Stuff to do
