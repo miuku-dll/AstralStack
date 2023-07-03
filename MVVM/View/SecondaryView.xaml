@@ -23,6 +23,7 @@
                 <RowDefinition Height="170"/>
             </Grid.RowDefinitions>
 
+            
 
 
             <TextBlock Text="Game library"
