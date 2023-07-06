@@ -103,4 +103,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-ps. i know the code is horrendous
+ps. i know the code is horrendous(ish)
