@@ -66,7 +66,7 @@ The Astral Stack Project is under the MIT License.
 
 
 ### Stuff to do
-> Improve the new UI after the big changes <br>
+> Fix UI bugs <br>
 > Implement a proper bookmarking method for blobs <br>
 > Implement a proper way to favouirte blobs <br>
 > Add a cpu & gpu temp screen to home page (empty pink box) <br>
