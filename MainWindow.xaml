@@ -46,13 +46,15 @@
             </Grid.RowDefinitions>
 
 
-            <Image Width="182"
-                   Name="logo"
-                   HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Margin="16,0,0,0">
-                <Image.Source>
-                    <BitmapImage DecodePixelWidth="210" DecodePixelHeight="90" UriSource="C:\Users\Administrator\Documents\VS Projects\c#\Kill yourself 1\Images\logo1.png" />
-                </Image.Source>
-            </Image>
+            <TextBlock
+                Text="Astral Stack"
+                FontSize="22"
+                Width="150"
+                Height="34"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="32,0,0,0"
+                Foreground="White" Grid.ColumnSpan="2"/>
 
 
             <Border Grid.Row="1" Grid.ColumnSpan="2" CornerRadius="20" Margin="15,0,5,10" >
@@ -62,7 +64,7 @@
                         <GradientStop Color="#455060" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
-                
+
                 <StackPanel Margin="0,15,0,0">
 
                     <RadioButton Content="Home"
