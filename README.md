@@ -10,7 +10,7 @@
 </p>
 <h3 align="center">A Light Loader For You Applications</h3>
 
-Astral Stack, is a free personal application dashboard under the name of Astral, minimal and easy to use. <br>
+Astral Stack, is a free personal application dashboard under the name of Atlas, minimal and easy to use. <br>
 Some features are not yet working, due to laziness. [Learn More](link) <br>
 If you have knowledge of c# + wpf, you can edit source of Astral and create a pull request. <br>
 Astral stack uses wpf for its UI and c# for its backend.
@@ -66,14 +66,13 @@ The Astral Stack Project is under the MIT License.
 
 
 ### Stuff to do
-> Improve the new UI after the big changes <br>
+> Fix UI bugs <br>
 > Implement a proper bookmarking method for blobs <br>
 > Implement a proper way to favouirte blobs <br>
 > Add a cpu & gpu temp screen to home page (empty pink box) <br>
 > Auto detect 2 main colors from image for gradient <br>
 > Better way to implement custom images for apps <br>
 >(Done ish) Better way to implement custom apps <br>
-> Make the ui not make me vomit <br>
 > Error code all errors for easier support <br>
 > Auto detect apps from x folders (ex games from fitgirl / dodirepacks) <br>
 
@@ -103,4 +102,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-ps. i know the code is horrendous
+ps. i know the code is horrendous(ish)
